@@ -1,0 +1,178 @@
+body{
+    background-color: rgb(201, 201, 201);
+}
+
+#minihomepi{
+    width:100%; 
+    max-width:900px;
+    padding-top: 4%;
+    padding-left: 12%;
+}
+
+.outer-box {
+    height: 600px;
+    display: inline-block;
+    background: #5ab2ca;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+}
+
+.inner-box {
+    background: #ffffff;
+    height: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    }
+
+
+    .content-box {
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px #cccccc solid;
+    background: #fff;
+    height: calc(100% - 30px);
+}
+
+.content-box-header {
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    }
+
+hr{
+    border-top: 1px solid #e6e6e6;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+}
+
+hr.dashed{
+    border-top: 1px dashed #e6e6e6;
+}
+
+tr.dashed{
+    border-top: 1px dashed #e6e6e6;
+}
+
+
+td{
+    border-top: 1px dashed #e6e6e6;
+    padding: 2%;
+}
+
+.content-title {
+    color: #1296bf;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.col {
+    width: 49%;
+}
+.flex-middle {
+    flex: auto;
+    display: flex;
+}
+
+.menu-item{
+    position: absolute;
+    top: 5px;
+    left: 571px;
+}
+
+
+.menu-item li{
+    list-style: none;
+
+    line-height: 35px;
+    margin-top: 10%;
+
+    width: 60px;
+    background: #2491b2;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 8px 8px 0px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.menu-item li:hover{
+    background: rgb(215, 236, 255);
+    border: 1px solid #2491b2;
+    border-left: none;
+}
+
+.menu-item li:hover a{
+    color: black;
+}
+
+.menu-item li a{
+    /* a태그 영역 클릭 가능하게 만들기 */
+    display: block;
+    /* 밑줄 제거 */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#menu-selected{
+    background: #fff;
+    border: 1px solid #2491b2;
+    border-left: none;
+}
+
+#menu-selected a{
+    color: black;
+}
+
+#musicbox{
+    position: absolute;
+    top: 65px;
+    left: 1165px;
+    width: 300px;
+    height: 300px;
+
+    background-color: white;
+
+}
+
+#banner{
+    height: 30px; 
+    background-color: gray; 
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mb-tb{
+    font-size: 10px;
+    width: 100%; 
+    text-align: center;
+}
+
+
+#music{
+    text-align: center;
+    border: 1px solid gray;
+    background-color: rgb(240, 240, 240);
+    border-radius: 50px;
+    margin: 10px;
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPage</title>
+    <link rel="stylesheet" href="cywordStyle.css">
+    
+    <style>
+        #contents{
+            /* text-align: center; */
+            font-size: 10px;
+        }
+        .musicTable i {
+            color: rgb(61, 133, 240);
+        }
+        .musicTable tr:hover{
+            background-color: lightblue;
+        }
+        .pagination{
+            margin-left: 190px;
+            margin-top: 30px;
+        }
+        .page-item{
+            list-style: none;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            width: 20px;
+            float: left;
+            text-align: center;
+        }
+        .page-link{
+            display: block;
+            text-decoration: none;
+            font-size: 10px;
+            color: black;
+        }
+
+        .nav-item{
+            list-style: none;
+            font-size: 10px;
+            cursor: pointer;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+
+            width: 60px;
+            text-align: center;
+            /* font-weight: bold; */
+            border-radius: 8px 8px 0px 0px;
+            float: left;
+            border: 1px solid lightblue;
+        }
+
+        .nav-link{
+            display: block;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        #lightblueBox{
+            margin-top: 30px;
+            border: 1px solid lightblue;
+            width: 100%;
+            height: 300px;
+        }
+        #lightblueBox li{
+            list-style: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <section id="minihomepi">
+        <!-- 왼쪽 -->
+        <section class="outer-box border-left-box" style="width: 27%; padding: 20px 0px 20px 20px">
+            <section class="inner-box" style="padding: 10px 5px 10px 10px;">
+
+                <!-- TODAY 97  |  TOTAL 0828 -->
+                <div class="content-box-header" style="justify-content: center">
+                    &nbsp;
+                    <span class="small-text">TODAY</span>
+                    &nbsp;
+                    <span style="color: red">97</span>
+                        &nbsp;|&nbsp;
+                    <span class="small-text">TOTAL 0828</span>
+                </div>
+
+            <div class="content-box" style="padding: 20px">
+                <!-- 작성 쓸 내용 -->
+                <span class="content-title">JUKE BOX</span>
+                <hr>
+                <!-- tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"
+                        style="background-color: lightblue;">
+                            음악게시판
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            내 음악
+                        </a>
+                    </li>
+                </ul>
+                <div id="lightblueBox">
+                    <ul>
+                        <li>📁 전체보기</li>
+                        <li>🎼 내가 가진 앨범</li>
+                        <li>🎤 노래방</li>
+                        <li>🎧 뮤직쉐이크</li>
+                    </ul>
+                </div>
+            </div>
+            </section>
+        </section>
+
+        <!-- 오른쪽 -->
+        <section class="outer-box border-right-box" style="width: 72%; padding: 20px 20px 20px 0px">
+            <section class="inner-box" style="padding: 10px 10px 10px 5px;">
+
+            <header class="content-box-header">
+                <h1 style="margin:0px; font-size: 1.3em; font-weight: 550;" class="color-blue">
+                    &nbsp;&nbsp;이예지의 미니홈피에 오신 것을 환영합니다~!
+                </h1>
+                <span style="font-size: 12px;">http://www.cyworld.com</span>
+            </header>
+
+            <!-- 하얀색 컨텐츠 박스 -->
+            <section class="content-box" style="box-shadow: 5px 5px 20px -10px grey; padding: 10px 20px;">
+                
+                <!-- 네비게이션 바 -->
+                <nav>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="mainPage.html">
+                                홈
+                            </a>
+                        </li>
+                        <li>
+                            <a href="photoPage.html" id="menuId">
+                                사진첩
+                            </a>
+                        </li>
+                        <li id="menu-selected">
+                            <a href="musicPage.html">
+                                쥬크박스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="diaryPage.html">
+                                다이어리
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            <!-- 컨텐츠 박스 -->
+            <div id="contents">
+                <header style="margin-top: 20px;">
+                    <span><button>듣기</button></span>
+                    <div style="float: right;">
+                        <span><button>이동</button></span>
+                        <span><button>배경음악 등록</button></span>
+                    </div>
+                </header>
+
+            <!-- 음악리스트 -->
+            <table class="musicTable" style="width: 100%;">
+                <tr style="background-color: rgb(212, 211, 211);">
+                    <th style="width: 20%;">
+                        <input type="checkbox" checked>&nbsp; 순위
+                    <th style="width: 50%;">곡명/앨범명</th>
+                    <th>아티스트</th>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">
+                        <input type="checkbox">&nbsp; 1
+                    </td>
+                    <td style="width: 50%;">
+                        📃 눈의 꽃 / 
+                        <i>[OST]미안하다 사랑하다</i>
+                    </td>
+                    <td>
+                        박효신
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">
+                        <input type="checkbox">&nbsp; 2
+                    </td>
+                    <td style="width: 50%;">
+                        📃 	Perhaps Love (사랑인가요) (duet with J)
+                        <br>
+                        <i>[OST]궁 (MBC 수목드라마)</i>
+                    </td>
+                    <td>
+                        하울(HowL)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">
+                        <input type="checkbox">&nbsp; 3
+                    </td>
+                    <td style="width: 50%;">
+                        📃 비행기 / 
+                        <i>거북이 사요!!</i>
+                    </td>
+                    <td>
+                        거북이	
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">
+                        <input type="checkbox">&nbsp; 4
+                    </td>
+                    <td style="width: 50%;">
+                        📃 So Hot / 
+                        <i>So Hot</i>
+                    </td>
+                    <td>
+                        원더걸스
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">
+                        <input type="checkbox">&nbsp; 5
+                    </td>
+                    <td style="width: 50%;">
+                        📃 심장이 없어 / 
+                        <i>The Golden Age</i>
+                    </td>
+                    <td>
+                        에이트(8Eight)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">
+                        <input type="checkbox">&nbsp; 6
+                    </td>
+                    <td style="width: 50%;">
+                        📃 벌써 일년 / 
+                        <i>Brown Eyes</i>
+                    </td>
+                    <td>
+                        브라운 아이즈(Brown Eyes)
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">
+                        <input type="checkbox">&nbsp; 7
+                    </td>
+                    <td style="width: 50%;">
+                        📃 	응급실 / 
+                        <i>쾌걸 춘향 (KBS 미니시리즈)</i>
+                    </td>
+                    <td>
+                        izi
+                    </td>
+                </tr>
+            </table>
+
+            <nav aria-label="...">
+                <ul class="pagination pagination-sm">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link" style="color: rgb(233, 117, 40);">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+
+            
+            </section>
+        </section>
+    </section>
+
+    </section>
+
+    <!-- 뮤직박스 -->
+    <section>
+        <div id="musicbox">
+            <div id="banner">
+                <b>💿MusicBox💿</b>
+            </div>
+            <table class="mb-tb">
+                <tr>
+                    <td>댓글 </td>
+                    <td>스트랩 <b style="color: red;">2020</b></td>
+                </tr>
+                <tr>
+                    <td>즐겨찾기 <b style="color: red;">2021</b></td>
+                    <td>신축년</td>
+                </tr>
+            </table>
+            <div id="music">
+                <img src="./img/2393.jpg" alt="벌써일년" style="width: 100px;"><br>
+                <b>벌써일년 - Brown Eyes</b>
+                <audio src="audio/videoplayback.mp4" controls= "controls"
+                autoplay="autoplay" loop="loop" style="width: 90%;"></audio>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diaryPage</title>
+    <link rel="stylesheet" href="cywordStyle.css">
+    <style>
+        #contents{
+            overflow: scroll;
+            height: calc(100% - 30px);
+        }
+
+        .bar{
+            height: 30px;
+            width: 100%;
+            
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <section id="minihomepi">
+        <!-- 왼쪽 -->
+        <section class="outer-box border-left-box" style="width: 27%; padding: 20px 0px 20px 20px">
+            <section class="inner-box" style="padding: 10px 5px 10px 10px;">
+
+                <!-- TODAY 97  |  TOTAL 0828 -->
+                <div class="content-box-header" style="justify-content: center">
+                    &nbsp;
+                    <span class="small-text">TODAY</span>
+                    &nbsp;
+                    <span style="color: red">97</span>
+                        &nbsp;|&nbsp;
+                    <span class="small-text">TOTAL 0828</span>
+                </div>
+
+            <div class="content-box" style="padding: 20px">
+                <!-- 작성 쓸 내용 -->
+                <span class="content-title">DIARY</span>
+                <hr>
+                <b style="font-size: 10px;">📁나에게 유일한 마약...★ MUSIC</b>
+                <br>
+                <b style="font-size: 10px;">📁난... ㄱ ㅏ끔... 눈물을 흘린ㄷ ㅏ..</b>
+                <br>
+            </div>
+            </section>
+        </section>
+
+        <!-- 오른쪽 -->
+        <section class="outer-box border-right-box" style="width: 72%; padding: 20px 20px 20px 0px">
+            <section class="inner-box" style="padding: 10px 10px 10px 5px;">
+
+            <header class="content-box-header">
+                <h1 style="margin:0px; font-size: 1.3em; font-weight: 550;" class="color-blue">
+                    &nbsp;&nbsp;이예지의 미니홈피에 오신 것을 환영합니다~!
+                </h1>
+                <span style="font-size: 12px;">http://www.cyworld.com</span>
+            </header>
+
+            <!-- 하얀색 컨텐츠 박스 -->
+            <section class="content-box" style="box-shadow: 5px 5px 20px -10px grey; padding: 10px 20px;">
+                
+                <!-- 네비게이션 바 -->
+                <nav>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="mainPage.html">
+                                홈
+                            </a>
+                        </li>
+                        <li>
+                            <a href="photoPage.html">
+                                사진첩
+                            </a>
+                        </li>
+                        <li>
+                            <a href="musicPage.html">
+                                쥬크박스
+                            </a>
+                        </li>
+                        <li id="menu-selected">
+                            <a href="diaryPage.html">
+                                다이어리
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- 다이어리 -->
+                <div id="contents">
+
+                    <div id="diary">
+                        <div class="bar">
+                            <span class="content-title">
+                                &nbsp;
+                                나에게 유일한 마약...★ MUSIC
+                                &nbsp;
+                            </span>
+                            <script>
+                                let today = new Date(); 
+                                document.write("(" + today.toLocaleString() + ')<br><br>');
+                            </script>
+                        </div>
+                        <div class="main">
+                            <img src="https://i.imgur.com/RgbP4kw.gif" alt="유일한 마약">
+                        </div> 
+                    </div>
+
+                    <div id="diary">
+                        <div class="bar">
+                            <span class="content-title">
+                                &nbsp;
+                                난... ㄱ ㅏ끔... 눈물을 흘린ㄷ ㅏ..
+                                &nbsp;
+                            </span>
+                            (2020. 2. 13. 오후 3:25:48)
+                        </div>
+                        <div class="main">
+                            <img src="https://img.huffingtonpost.com/asset/5d700d5c2400003200746b88.jpeg?ops=scalefit_630_noupscale" alt="눈뭉">
+                        </div> 
+                    </div>
+                    </div>
+
+                </div>
+
+                
+            
+            </section>
+        </section>
+    </section>
+
+    </section>
+
+    <!-- 뮤직박스 -->
+    <section>
+        <div id="musicbox">
+            <div id="banner">
+                <b>💿MusicBox💿</b>
+            </div>
+            <table class="mb-tb">
+                <tr>
+                    <td>댓글 </td>
+                    <td>스트랩 <b style="color: red;">2020</b></td>
+                </tr>
+                <tr>
+                    <td>즐겨찾기 <b style="color: red;">2021</b></td>
+                    <td>신축년</td>
+                </tr>
+            </table>
+            <div id="music">
+                <img src="./img/2393.jpg" alt="벌써일년" style="width: 100px;"><br>
+                <b>벌써일년 - Brown Eyes</b>
+                <audio src="audio/videoplayback.mp4" controls= "controls"
+                autoplay="autoplay" loop="loop" style="width: 90%;"></audio>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

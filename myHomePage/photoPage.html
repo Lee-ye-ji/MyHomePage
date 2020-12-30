@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photoPage</title>
+    <link rel="stylesheet" href="cywordStyle.css">
+    <style>
+        .card{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 30%;
+        /* height: 30%; */
+        float: left;
+        padding-left: 15px;
+        }
+
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+        padding: 2px 16px;
+        }
+
+        #list li:hover{
+            background-color: lightpink;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section id="minihomepi">
+        <!-- 왼쪽 -->
+        <section class="outer-box border-left-box" style="width: 27%; padding: 20px 0px 20px 20px">
+            <section class="inner-box" style="padding: 10px 5px 10px 10px;">
+
+                <!-- TODAY 97  |  TOTAL 0828 -->
+                <div class="content-box-header" style="justify-content: center">
+                    &nbsp;
+                    <span class="small-text">TODAY</span>
+                    &nbsp;
+                    <span style="color: red">97</span>
+                        &nbsp;|&nbsp;
+                    <span class="small-text">TOTAL 0828</span>
+                </div>
+
+            <div class="content-box" style="padding: 20px">
+                <!-- 작성 쓸 내용 -->
+                <span class="content-title">PHOTO ALBLM</span>
+                <hr>
+                <ul id="list">
+                    <li>전체보기</li>
+                    <li>★쫑이★</li>
+                    <li>❤</li>
+                    <li>✈</li>
+                    <li>♬</li>
+                </ul>
+            </div>
+            </section>
+        </section>
+
+        <!-- 오른쪽 -->
+        <section class="outer-box border-right-box" style="width: 72%; padding: 20px 20px 20px 0px">
+            <section class="inner-box" style="padding: 10px 10px 10px 5px;">
+
+            <header class="content-box-header">
+                <h1 style="margin:0px; font-size: 1.3em; font-weight: 550;" class="color-blue">
+                    &nbsp;&nbsp;이예지의 미니홈피에 오신 것을 환영합니다~!
+                </h1>
+                <span style="font-size: 12px;">http://www.cyworld.com</span>
+            </header>
+
+            <!-- 하얀색 컨텐츠 박스 -->
+            <section class="content-box" style="box-shadow: 5px 5px 20px -10px grey; padding: 10px 20px;">
+                
+                <!-- 네비게이션 바 -->
+                <nav>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="mainPage.html">
+                                홈
+                            </a>
+                        </li>
+                        <li id="menu-selected">
+                            <a href="photoPage.html" id="menuId">
+                                사진첩
+                            </a>
+                        </li>
+                        <li>
+                            <a href="musicPage.html">
+                                쥬크박스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="diaryPage.html">
+                                다이어리
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            <!-- 작성할 내용 -->
+            <div id="card1">
+                <!-- 카드 -->
+
+                <div class="card">
+                    <img src="./img/쫑이.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <pre style="text-align: center;">❤</pre> 
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/쫑쫑.jpeg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <pre style="text-align: center;">🙂</pre> 
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/20161225_1145.JPG" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <pre style="text-align: center;">🐻‍❄️</pre> 
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <div id="card2" style="margin-top: 45%;">
+                <!-- 카드 -->
+                <div class="card">
+                    <img src="./img/20160426_1223.JPG" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <pre style="text-align: center;">⭐</pre> 
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/20161231_213956.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <pre style="text-align: center;">🎵</pre> 
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./img/20161209_1121.JPG" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <pre style="text-align: center;">✈</pre> 
+                    </div>
+                </div>
+            </div>
+
+            
+            </section>
+        </section>
+    </section>
+
+    </section>
+
+    <!-- 뮤직박스 -->
+    <section>
+        <div id="musicbox">
+            <div id="banner">
+                <b>💿MusicBox💿</b>
+            </div>
+            <table class="mb-tb">
+                <tr>
+                    <td>댓글 </td>
+                    <td>스트랩 <b style="color: red;">2020</b></td>
+                </tr>
+                <tr>
+                    <td>즐겨찾기 <b style="color: red;">2021</b></td>
+                    <td>신축년</td>
+                </tr>
+            </table>
+            <div id="music">
+                <img src="./img/2393.jpg" alt="벌써일년" style="width: 100px;"><br>
+                <b>벌써일년 - Brown Eyes</b>
+                <audio src="audio/videoplayback.mp4" controls= "controls"
+                autoplay="autoplay" loop="loop" style="width: 90%;"></audio>
+            </div>
+        </div>
+</body>
+</html>
